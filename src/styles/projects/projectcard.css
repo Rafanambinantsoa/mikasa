@@ -1,0 +1,52 @@
+// ProjectCard.css
+.project-card-list-item {
+    width: 300px;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .project-card-list-item:hover {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+  
+  .project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  
+  .project-title {
+    font-family: 'Poppins Bold';
+    font-size: 1.1rem;
+  }
+  
+  .project-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .phase-badge {
+    margin-bottom: 16px;
+  }
+  
+  .progress-section {
+    display: flex;
+    justify-content: space-between;  // Align to the right side
+    margin: 20px 0;
+    align-items: center;
+  }
+  
+  .financial-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

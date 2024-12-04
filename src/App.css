@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mantine-AppShell-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh; /* Full viewport height */
+  min-height: 0; /* Avoid any extra overflow */
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+  background: #f3f3f3; 
+}
+nav {
+  filter: drop-shadow(2px 0px 32px rgba(0, 0, 0, 0.05));
+}

@@ -1,0 +1,117 @@
+.clients-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.clients-container > .main-title-cta {
+    padding: 24px !important
+}
+
+.clients-action-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.clients-filter-section {
+    display: flex;
+    gap: 24px;
+    align-items: center
+}
+
+.clients-list-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    height: 100%;
+    flex-grow: 1
+}
+
+.clients-datagrid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    position: relative; /* Ensure the loader is positioned relative to this container */
+    height: 100%
+}
+
+/* .mantine-Table-thead > .mantine-Table-tr {
+    background-color: #228BE6;
+    color: white;
+} */
+
+.table-header {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+
+}
+
+.table-header-icon, .table-header-name {
+    margin: 0;
+    padding: 0;
+    display: flex
+}
+
+.mrt-table-paper {
+    padding: 24px;
+    border-radius: 32px !important;
+    display: none;
+    height: auto;
+}
+
+.MRT_TopToolbar-module_root__r4-V9
+{
+    padding: 12px !important
+}
+
+.mrt-table-head-cell-content, .mrt-table-head-cell-content>* {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mrt-table-pagination {
+    padding: 32px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mrt-table-head-cell-labels > .mantine-focus-auto {
+    background: none;
+    color: black
+}
+
+.mrt-global-filter-text-input > .mantine-TextInput-wrapper > .mantine-Input-input {
+    border-radius: 32px;
+
+}
+
+.mantine-focus-auto > .mantine-Text-root {
+    padding: 32px;
+    display: flex;
+}
+
+.mrt-table-body-cell{
+    padding: 32px !important;
+}
+
+.mantine-Table-thead{
+    background-color: white;
+}
+
+.textinput-error {
+    font-size: 12px;
+    margin-top: 8px;
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

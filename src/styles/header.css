@@ -1,0 +1,6 @@
+.group-right {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Adjust this for spacing */
+  }
+  

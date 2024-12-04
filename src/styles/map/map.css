@@ -1,0 +1,114 @@
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.map-details {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 24px;
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.map-details .mantine-Card-root {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-card-div {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    margin-bottom: 24px;
+}
+
+.map-card-div h3 {
+    margin-top: 0;
+    color: #2C3E50;
+    font-size: 1.2rem;
+}
+
+.map-card-div::-webkit-scrollbar {
+    width: 6px;
+}
+
+.map-card-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.map-card-div::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.map-card-div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.map-card-header {
+    padding-bottom: 24px;
+}
+
+.supplier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 4px;
+}
+
+.supplier-card {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.supplier-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.supplier-card strong {
+    display: block;
+    color: #2d3748;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.supplier-card p {
+    color: #718096;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.forecast-day strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}

@@ -1,0 +1,62 @@
+.workers-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.workers-container > .mantine-Tabs-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.workers-container > .mantine-Tabs-root > .mantine-Tabs-panel {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.main-title-cta {
+    padding: 24px !important;
+}
+
+.workers-list-section, .jobs-list-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    height: 100%;
+    flex-grow: 1
+}
+
+.table-container {
+    height: 100%;
+    overflow: auto;
+    width: 100%
+}
+.workers-datagrid, .jobs-datagrid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    position: relative; /* Ensure the loader is positioned relative to this container */
+    height: 100%
+}
+
+.mantine-Table-root {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed; /* Ensures columns are fixed width */
+}
+
+.mantine-Table-th,
+.mantine-Table-td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Limit column width */
+.table-header-name {
+    max-width: 150px;
+}

@@ -1,0 +1,89 @@
+/* Modal styles */
+.task-modal {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Multi-select item styles */
+  .select-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .select-item-avatar {
+    border-radius: 9999px;
+  }
+  
+  /* Button container */
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  /* Task bar styles */
+  .task-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-bar-content {
+    flex: 1;
+  }
+  
+  /* Tooltip content styles */
+  .tooltip-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .assigned-workers {
+    margin-top: 0.5rem;
+  }
+  
+  .worker-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Avatar group styles */
+  .avatar-group {
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  
+  .avatar-stack {
+    margin-left: -0.5rem;
+  }
+  
+  .avatar {
+    border-radius: 9999px;
+    border: 2px solid white;
+  }
+  
+  /* Assigned workers section */
+  .assigned-workers-section {
+    margin-top: 0.5rem;
+  }
+  
+  .assigned-worker-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Helper utility classes */
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }

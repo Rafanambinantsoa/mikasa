@@ -1,0 +1,24 @@
+.invoices-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.invoices-list-table-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    height: 100%;
+    flex-grow: 1
+}
+
+.invoices-datagrid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    position: relative; /* Ensure the loader is positioned relative to this container */
+    height: 100%
+}

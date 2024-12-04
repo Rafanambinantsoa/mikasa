@@ -1,0 +1,259 @@
+/* ._2pZMF {
+    display: none; //makes the weird group task progress invisible
+}
+
+.rows {
+    opacity: 25%
+}
+
+._1nBOt > * {
+    font-family: 'Poppins Bold', sans-serif;
+}
+
+._3lLk3[title] > ._nI1Xw > * {
+    font-family: 'Poppins Bold', sans-serif !important;
+}
+
+._WuQ0f, ._3lLk3 {
+    padding: 12px;
+}
+
+._CZjuD {
+    width: 100%
+} */
+
+.gantt-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1.25rem;
+    background-color: #FFFFFF;
+    padding: 1.25rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(186, 215, 242, 0.2);
+}
+
+.gantt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gantt-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.view-selector {
+    padding: 0.5rem;
+    border: 2px solid #E2E8F4;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #4A5568;
+    font-size: 0.925rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.view-selector:hover {
+    border-color: #BAD7F2;
+    background-color: #F8FAFF;
+}
+
+.view-selector:focus {
+    border-color: #95B8E3;
+    box-shadow: 0 0 0 3px rgba(186, 215, 242, 0.2);
+}
+
+.list-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.925rem;
+    color: #4A5568;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.list-toggle input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom {
+    position: absolute;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #FFFFFF;
+    border: 2px solid #E2E8F4;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.list-toggle input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #BAD7F2;
+    border-color: #95B8E3;
+}
+
+.checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.list-toggle input[type="checkbox"]:checked + .checkbox-custom::after {
+    opacity: 1;
+}
+
+.list-toggle:hover .checkbox-custom {
+    border-color: #BAD7F2;
+    background-color: #F8FAFF;
+}
+
+.label-text {
+    font-weight: 500;
+}
+
+.gantt-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+.gantt-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #E2E8F4;
+    background-color: #FFFFFF;
+}
+
+/* Override default gantt-task-react styles */
+.gantt-container :global(.gantt-task-info) {
+    background-color: #F8FAFF;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(186, 215, 242, 0.15);
+    padding: 1rem;
+}
+
+.gantt-container :global(.gantt-task-row) {
+    border-bottom: 1px solid #F0F4F8;
+}
+
+.gantt-container :global(.gantt-task-row):hover {
+    background-color: #F8FAFF;
+}
+
+.gantt-container :global(.gantt-table-header) {
+    background-color: #F8FAFF;
+    color: #4A5568;
+    font-weight: 600;
+}
+
+/* Custom scrollbar */
+.gantt-container ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.gantt-container ::-webkit-scrollbar-track {
+    background: #F0F4F8;
+    border-radius: 8px;
+}
+
+.gantt-container ::-webkit-scrollbar-thumb {
+    background: #BAD7F2;
+    border-radius: 8px;
+    border: 2px solid #F0F4F8;
+}
+
+.gantt-container ::-webkit-scrollbar-thumb:hover {
+    background: #95B8E3;
+}
+
+/* Additional styles for timeline */
+.gantt-container :global(.gantt-timeline-header) {
+    background-color: #F8FAFF;
+    border-bottom: 2px solid #E2E8F4;
+}
+
+.gantt-container :global(.gantt-calendar-header) {
+    background-color: #FFFFFF;
+    color: #4A5568;
+}
+
+//////////////////////////////////////////////////
+
+.task-tooltip {
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(186, 215, 242, 0.2);
+    min-width: 240px;
+}
+
+.task-tooltip h4 {
+    margin: 0 0 12px 0;
+    color: #4A5568;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-info {
+    margin-bottom: 12px;
+}
+
+.task-info p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #718096;
+}
+
+.task-workers {
+    margin-top: 12px;
+    border-top: 1px solid #E2E8F4;
+    padding-top: 12px;
+}
+
+.task-workers p {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.modal-content {
+    padding: 24px;
+}
+
+/* Style for Mantine MultiSelect */
+.mantine-MultiSelect-input {
+    border-radius: 8px;
+    border-color: #E2E8F4;
+}
+
+.mantine-MultiSelect-input:focus {
+    border-color: #BAD7F2;
+}
+
+.mantine-MultiSelect-item {
+    border-radius: 6px;
+}
+
+.mantine-MultiSelect-item[data-selected] {
+    background-color: #BAD7F2;
+}

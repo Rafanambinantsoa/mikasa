@@ -1,0 +1,88 @@
+/* Update your existing CSS with these modifications */
+
+.popup-modal [class*="mantine-Drawer-content"] {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mantine-Drawer-body{
+    height: 100%;
+    width: 100% !important
+}
+
+.mantine-Drawer-body > form{
+    height: 100%
+}
+
+.mantine-Modal-body{
+    height: 100%;
+    padding: 0 32px 32px 32px !important
+}
+
+.mantine-Modal-body > .mantine-Group-root {
+    margin-top: 32px !important;
+}
+
+.mantine-Modal-content{
+    height: 100%;
+}
+
+.modal-content {
+    padding: 0px 24px 24px 24px;
+    width: 100%;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.modal-title-section {
+    margin-bottom: 24px;
+}
+
+.modal-datainput-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.modal-form-section {
+
+    flex: 1;
+}
+
+.modal-form-section .mantine-Input-wrapper {
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
+
+.modal-action-button {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.mantine-Modal-header {
+    padding: 24px 32px 24px 32px !important;
+}
+
+.custom-action-button {
+    cursor: none;
+}
+
+.custom-action-button:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.mantine-Stepper-content {
+    margin-top: 32px;
+}
+
+.mantine-ScrollArea-root {
+    height: 100%
+}

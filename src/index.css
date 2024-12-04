@@ -1,0 +1,122 @@
+@font-face{
+  font-family: "Poppins";
+  src:local("Poppins-Regular"),
+  url('./assets/fonts/Poppins-Regular.ttf') 
+}
+
+@font-face{
+  font-family: "Poppins Bold";
+  src:local("Poppins-Bold"),
+  url('./assets/fonts/Poppins-Bold.ttf') 
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+.bold-title {
+  font-family: "Poppins Bold", sans-serif;
+}
+
+.main-section {
+  padding: 16px;
+}
+
+.main-title-section {
+  padding: 24px;
+  flex-shrink: 0; /* Prevent title section from shrinking */
+  margin-bottom: 24px
+}
+
+.main-title {
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.main-subtitle {
+  font-size: 16px;
+}
+
+/* Carousel */
+/* Target Mantine's carousel viewport specifically */
+.mantine-Carousel-viewport {
+  flex: 1 !important;
+  height: 100% !important;
+}
+
+/* Ensure slides fill the viewport */
+.mantine-Carousel-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mantine-Carousel-container {
+  flex: 1 !important;
+  height: 100% !important;
+}
+
+.breadcrumbs-container {
+  padding: 24px;
+}
+
+.main-title-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mantine-Tabs-root {
+  width: 100%
+}
+
+.mantine-Tabs-list {
+  margin-bottom: 32px
+}
+
+.mantine-Table-th {
+  font-family: 'Poppins Bold', sans-serif;
+  font-weight: bold;
+}
+
+#edit-button:hover {
+  color: blue;
+  transition: .25s all ease-in-out;
+}
+
+#delete-button:hover {
+  color: red;
+  transition: .25s all ease-in-out;
+}

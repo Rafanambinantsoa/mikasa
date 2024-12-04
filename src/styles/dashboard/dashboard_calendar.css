@@ -1,0 +1,62 @@
+
+/* IN CASE WE NEED STYLING FOR CALENDAR LATER */
+
+.bento-item .mantine-Calendar-root {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 16px !important;
+}
+
+/* Calendar table */
+.bento-item .mantine-Calendar-month {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 8px 4px !important;
+  table-layout: fixed !important;
+}
+
+/* Individual day cells */
+.bento-item .mantine-Calendar-day {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  display: table-cell !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Weekday header cells */
+.bento-item .mantine-Calendar-weekday {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+}
+
+/* Month row styling */
+.bento-item .mantine-Calendar-monthRow {
+  display: table-row !important;
+  height: 32px !important;
+}
+
+/* Month cell styling */
+.bento-item .mantine-Calendar-monthCell {
+  display: table-cell !important;
+  padding: 2px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Add/update these styles for the calendar header */
+.bento-item .mantine-Calendar-calendarHeader {
+  width: 100% !important; /* Compensate for the border-spacing */
+  
+  
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+
+}

@@ -1,0 +1,9 @@
+.quote-status-item {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.add-quote-work {
+    margin-top: 24px;
+}
